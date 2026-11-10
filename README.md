@@ -67,7 +67,7 @@ git clone https://github.com/Slyferm/EShopAnalytics.git
 cd EShopAnalytics
 ```
 
-3. Configure o arquivo `.env` com as credenciais do MongoDB, seguindo o modelo disponibilizado no projeto.
+3. Configure o arquivo `.env.example` com as credenciais do MongoDB, seguindo o modelo disponibilizado no projeto.
 
 4. Inicie os containers:
 
