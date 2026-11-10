@@ -1,0 +1,25 @@
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: eshop_mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+
+  app:
+    build: .
+    container_name: eshop_app
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      MONGO_URI: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@mongodb:27017/?authSource=admin
+    depends_on:
+      - mongodb
+
+volumes:
+  mongo_data:
