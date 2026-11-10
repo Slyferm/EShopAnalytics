@@ -58,7 +58,7 @@ Desenvolver uma aplicação para gerenciar clientes, produtos e pedidos, utiliza
 1. Clone o repositório:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/Slyferm/EShopAnalytics.git
 ```
 
 2. Entre na pasta do projeto:
