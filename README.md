@@ -100,7 +100,7 @@ EShopAnalytics/
 └── README.md
 ```
 
-**Importante:** o arquivo `.env` contém credenciais e não deve ser publicado no GitHub.
+**Importante:** o arquivo `.env.example` contém credenciais e não deve ser publicado no GitHub.
 
 ## Banco de dados
 
